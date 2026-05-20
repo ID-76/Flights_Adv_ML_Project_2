@@ -1,0 +1,14 @@
+,Model,MAE (flights/day),RMSE (flights/day)
+1,Transformer encoder (90d window),37.65,47.43
+2,ARIMA + manual seasonal diff(7),57.19,73.57
+3,"AutoARIMA seasonal (3, 0, 2)x(0, 1, 1, 7)",58.08,74.03
+4,"AutoARIMA non-seasonal (5, 1, 5)",60.48,78.15
+5,"SARIMA(1,0,1)(1,1,1,7)",61.61,78.89
+6,"SARIMA(2,0,1)(1,1,1,7)",62.46,79.74
+7,Baseline — seasonal naive (7),68.75,85.39
+8,"ARMA(1,1)",75.32,94.03
+9,"ARIMA(2,1,2)",78.31,95.83
+10,"ARIMA(1,1,1)",79.22,97.05
+11,"ARMA(2,2)",79.3,97.25
+12,Baseline — last value,79.58,98.42
+13,Baseline — mean,290.75,299.86
